@@ -311,7 +311,7 @@
         // update the current track info in the player
         // log('updateTrackInfo', track);
         $('.sc-info', $player).each(function(index) {
-          $('h3', this).html('<a href="' + track.permalink_url +'">' + track.title + '</a>');
+          $('h1', this).html('<a href="' + track.permalink_url +'">' + track.title + '</a>');
           $('h4', this).html('par <a href="' + track.user.permalink_url +'">' + track.user.username + '</a>');
           $('p', this).html(track.description || 'Aucune description');
         });
