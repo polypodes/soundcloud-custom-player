@@ -312,8 +312,8 @@
         // log('updateTrackInfo', track);
         $('.sc-info', $player).each(function(index) {
           $('h3', this).html('<a href="' + track.permalink_url +'">' + track.title + '</a>');
-          $('h4', this).html('by <a href="' + track.user.permalink_url +'">' + track.user.username + '</a>');
-          $('p', this).html(track.description || 'no Description');
+          $('h4', this).html('par <a href="' + track.user.permalink_url +'">' + track.user.username + '</a>');
+          $('p', this).html(track.description || 'Aucune description');
         });
         // update the artwork
         $('.sc-artwork-list li', $player).each(function(index) {
@@ -501,7 +501,7 @@
         // adding controls to the player
         $player
           .find('.sc-controls')
-            .append('<a href="#play" class="sc-play">Écouter</a> <a href="#pause" class="sc-pause hidden">Pause</a>')
+            .append('<a href="#play" class="sc-play">Lancer la lecture</a> <a href="#pause" class="sc-pause hidden">Pause</a>')
           .end()
           .append('<a href="#info" class="sc-info-toggle">Info</a>')
           .append('<div class="sc-scrubber"></div>')
