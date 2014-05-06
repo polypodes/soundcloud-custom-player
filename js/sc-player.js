@@ -503,7 +503,7 @@
           .find('.sc-controls')
             .append('<a href="#play" class="sc-play">Lancer la lecture</a> <a href="#pause" class="sc-pause hidden">Pause</a>')
           .end()
-          .append('<a href="#info" class="sc-info-toggle">Info</a>')
+          // .append('<a href="#info" class="sc-info-toggle">Info</a>')
           .append('<div class="sc-scrubber"></div>')
             .find('.sc-scrubber')
               .append('<div class="sc-volume-slider"><span class="sc-volume-status" style="width:' + soundVolume +'%"></span></div>')
